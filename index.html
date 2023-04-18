@@ -25,7 +25,33 @@
     </header>
     <main>
         <section class="container">
-            
+            <h1 class="text-center text-light">Temporizador</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-8">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Minutos</span>
+                        <input type="number" id="minutos" class="form-control" placeholder="Ingrese minutos" min="0"
+                            max="59" step="1">
+                    </div>
+                </div>
+                <div class="col-md-6 col-8">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Segundos</span>
+                        <input type="number" id="segundos" class="form-control" placeholder="Ingrese segundos" min="0"
+                            max="59" step="1">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <button id="iniciar" class="btn btn-outline-success col-3"><strong>Iniciar</strong></button>
+                <button id="pausar" class="btn btn-outline-warning col-3"><strong>Pausar</strong></button>
+                <button id="resetear" class="btn btn-outline-danger col-3"><strong>Resetear</strong></button>
+            </div>
+            <div class="temporizador row justify-content-center">
+                <span id="minutos-restantes" class="text-light col-lg-3 col-md-4 col-3">00</span>
+                <p class="text-light col-lg-3 col-md-4 col-3">:</p>
+                <span id="segundos-restantes" class="text-light col-lg-3 col-md-4 col-3">00</span>
+            </div>
         </section>
     </main>
     <footer class="bg-dark text-light text-center py-4">&copy; Todos los derechos reservados</footer>
